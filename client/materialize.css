@@ -1,5 +1,4 @@
-nav ul a,
-nav .brand-logo {
+nav ul a, nav .brand-logo {
   color: #444;
 }
 
@@ -81,12 +80,17 @@ nav ul a, nav .brand-logo{
   background-color: #D4E157;
   /*box-decoration-break: white;*/
 }
-/*
-.nav{
+
+.nav-wrapper{
   box-shadow: #A1887F;
-  color: #A1887F;
+  color: white;/*#A1887F;*/
   margin: #A1887F;
+  background-color: #263238;
+}
+nav{
+  color:rgb(38, 166, 154);
+  background-color:#263238;
 }
 
-*/
+
 

@@ -11,9 +11,11 @@ Template.loginform.events({
 		
 		e.preventDefault();
 		myTemplates.set("registerform");
+		$(".panelform").css("opacity",0); 
 	},
 	"click #cerrar": function (e) {
 		e.preventDefault();
 		$(".panelform").css("opacity",0); 
 	}
+
 });

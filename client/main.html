@@ -1,4 +1,6 @@
-<head>
+
+
+  <head>
   <title>portal educativo</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -45,7 +47,7 @@
 
 </template>
 <template name="navprincipal">
-  <nav class="blue-grey" role="navigation">
+  <nav class="lateral" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">e-educa</a>
       <ul class="right hide-on-med-and-down">
@@ -141,4 +143,16 @@
     
     <div class="parallax"><img src=/images/image4.jpg alt="Unsplashed background img 2"></div>
   </div>
+
+
+    {{>seleccionar}}
 </template>
+<template name="seleccionar">
+  <select class="browser-default">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+</template>
+
