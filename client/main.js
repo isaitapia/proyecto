@@ -18,6 +18,14 @@ Template.hello.events({
   'click button'(event, instance) {
     // increment the counter when button is clicked
     instance.counter.set(instance.counter.get() + 1);
+  },
+  "click #loginlink" : function (e) {
+      e.preventDefault();
+      $(".panelform").css("opacity",1);
+  },
+   "click #emerglink" : function (e) {
+      e.preventDefault();
+      $(".panelformemerg").css("opacity",1);
   }
 }),
 Template.test.onRendered(function(){

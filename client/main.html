@@ -2,6 +2,7 @@
   <title>portal educativo</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="shortcut icon" type="images/x-icon" href="/images/icon1.png"/>
 </head>
 
 <body>
@@ -14,8 +15,6 @@
 
   {{> test}}
  
-  
-
 </body>
 
 <template name="hello">
@@ -34,24 +33,34 @@
 </template>
 
 <template name="test">
-  <nav class="white" role="navigation">
+  
+  {{>navprincipal}}
+  <div class="row">
+  {{>mainlogin}}
+  </div>
+
+  {{>parallax1}}
+  {{>cursosparcial}}
+  {{>parallax2}} 
+
+</template>
+<template name="navprincipal">
+  <nav class="blue-grey" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">e-educa</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="loginform">login </a></li>
+        <li><a href="loginform" id="loginlink">login </a></li>
       </ul>
 
       <ul id="login" class="login">
         <li><a href="3"></a></li>
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="" data-activates="nav-mobile" id="emerglink" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>  
   </nav>
-
-  <div class="row">
-  {{>mainlogin}}
-  </div>
-
+</template>
+<template name="parallax1">
+  
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
@@ -68,72 +77,68 @@
       </div>
     </div>
     <div class="parallax"><img src="/images/image4.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-
-
+  </div>  
+</template>
+<template name="cursosparcial">
   <div class="container">
     <div class="section">
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">folder</i></h2>
+            <h2 class="center brown-text"><i class="material-icons">book</i></h2>
             <h5 class="center">Curso de HTML5</h5>
 
             <p class="light">Descripción del curso...</p>
           </div>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">folder</i></h2>
+            <h2 class="center brown-text"><i class="material-icons">book</i></h2>
             <h5 class="center">Curso de Diseño y Desarrollo</h5>
 
             <p class="light">Descripción del curso ...</p>
           </div>
         </div>
 
-        <div class="col s12 m4">
+        <div class="col s12 m3">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">folder</i></h2>
+            <h2 class="center brown-text"><i class="material-icons">book</i></h2>
             <h5 class="center">Curso de Nodejs</h5>
 
             <p class="light">Descripción del curso...</p>
           </div>
         </div>
+        
+        <div class="col s12 m3">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">book</i></h2>
+            <h5 class="center">Más...</h5>
+
+            <p class="light">Descripción del curso...</p>
+          </div>
+        </div>
+
       </div>
 
     </div>
   </div>
-
-
+</template>
+<template name="parallax2">
   <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
+    
+      
         <div class="row center">
-          <h5 class="header col s12 light">preguntas frecuentes
-          </h5>
+          <div class="col s12 center">
+            
+            <h4>Contáctanos</h4>
+            <p class="left-align light center">informacion de la institución a lo largo de toda esta línea dentro del Diseño</p>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="parallax"><img src=/images/image7.jpg alt="Unsplashed background img 2"></div>
+      
+    
+    <div class="parallax"><img src=/images/image4.jpg alt="Unsplashed background img 2"></div>
   </div>
-
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contáctanos</h4>
-          <p class="left-align light">informacion de la institución a lo largo de toda esta línea dentro del Diseño</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-
 </template>
