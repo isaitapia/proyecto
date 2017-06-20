@@ -26,3 +26,7 @@ materialize:materialize
 accounts-password
 accounts-ui
 jquery
+#iron:router
+kadira:flow-router
+kadira:blaze-layout
+

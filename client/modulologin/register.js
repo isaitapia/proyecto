@@ -16,7 +16,7 @@ Template.registerform.events({
 				"carrera" : e.target.carrera.value,
 				}
 
-		};
+		};/*
 		Accounts.createUser(user,function(e){
 			if(e == undefined){
 				console.log(indefinido);
@@ -25,7 +25,7 @@ Template.registerform.events({
 			}
 
 			//Meteor.logout();  -- metodo
-	});
+		});  */
 	},
 	
 		
