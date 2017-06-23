@@ -14,7 +14,7 @@ Template.hello.helpers({
   },
 });
 
-Template.hello.events({
+Template.test.events({
   "click #loginlink" : function (e) {
       e.preventDefault();
       $(".panelform").css("opacity",1);
@@ -30,5 +30,5 @@ Template.hello.events({
 Template.test.onRendered(function(){
 	$('.button-collapse').sideNav();
   $('.parallax').parallax();
-  /*$(".panelform").css("opacity",0);*/
+  $(".panelform").css("opacity",0);
 });
